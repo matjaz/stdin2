@@ -1,0 +1,39 @@
+{
+  "name": "stdin2",
+  "version": "1.0.0",
+  "description": "Get stdin as a string or buffer, using promise. Supports timeout & tty.",
+  "main": "index.js",
+  "homepage": "https://github.com/matjaz/stdin2",
+  "keywords": [
+    "stdin",
+    "buffer",
+    "stream",
+    "read",
+    "tty",
+    "await"
+  ],
+  "scripts": {
+    "standard": "standard",
+    "test": "standard && nyc ava",
+    "report": "nyc report --reporter=html"
+  },
+  "files": [
+    "index.js"
+  ],
+  "author": {
+    "email": "matjazl@gmail.com",
+    "name": "Matjaz Lipus"
+  },
+  "bugs": {
+    "url": "https://github.com/matjaz/stdin2/issues"
+  },
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.11.0",
+    "nyc": "^5.5.0",
+    "standard": "^5.4.1"
+  }
+}

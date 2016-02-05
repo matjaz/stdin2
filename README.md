@@ -1,4 +1,4 @@
-# stdin2 [![Build status][travis-image]][travis-url] [![Coverage Status][coverage-image]][coverage-url] [![js-standard-style][standard-image]][standard-url] [![Dependencies][david-image]][david-url] [![devDependencies][david-dev-image]][david-dev-url]
+# stdin2 [![Build status][npm-image]][npm-url] [![Build status][travis-image]][travis-url] [![Coverage Status][coverage-image]][coverage-url] [![js-standard-style][standard-image]][standard-url] [![Dependencies][david-image]][david-url] [![devDependencies][david-dev-image]][david-dev-url]
 
 > Get [stdin](https://nodejs.org/api/process.html#process_process_stdin) as a string or buffer, using promise.  Supports timeout & tty.
 
@@ -54,6 +54,8 @@ Get `stdin` as a string.
 
 MIT
 
+[npm-image]: https://img.shields.io/npm/v/stdin2.svg
+[npm-url]: https://www.npmjs.com/package/stdin2
 [travis-image]: https://img.shields.io/travis/matjaz/stdin2/master.svg?style=flat
 [travis-url]: https://travis-ci.org/matjaz/stdin2
 [coverage-image]: https://img.shields.io/coveralls/matjaz/stdin2/master.svg?style=flat

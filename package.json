@@ -32,7 +32,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "ava": "^0.14.0",
+    "ava": "^0.15.0",
     "nyc": "^6.0.0",
     "standard": "^7.0.0"
   }

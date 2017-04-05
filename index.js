@@ -48,7 +48,7 @@ function Stdin (options) {
     stdin.on('end', function () {
       if (opts.buffer) {
         resolve(Buffer.concat(ret.map(function (chunk) {
-          return new Buffer(chunk)
+          return Buffer.from(chunk)
         }), len))
       } else {
         resolve(ret.join(''))

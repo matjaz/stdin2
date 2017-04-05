@@ -1,6 +1,7 @@
 language: node_js
 node_js:
+  - '7'
+  - '6'
   - '5'
-  - '4'
 after_success:
     - 'npm i coveralls@2 && nyc report --reporter=text-lcov | coveralls'

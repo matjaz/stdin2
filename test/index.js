@@ -22,7 +22,7 @@ test.serial('get stdin as a buffer', (t) => {
     t.is(r.toString().trim(), 'unicorns-foobar')
   })
   stdin.push('unicorns')
-  stdin.push(new Buffer('-foobar'))
+  stdin.push(Buffer.from('-foobar'))
   stdin.emit('end')
   return promise
 })

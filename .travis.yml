@@ -1,7 +1,10 @@
 language: node_js
 node_js:
-  - '7'
   - '6'
-  - '5'
+  - '7'
+  - '8'
+  - '9'
+  - '10'
+  - node
 after_success:
     - 'npm i coveralls@2 && nyc report --reporter=text-lcov | coveralls'

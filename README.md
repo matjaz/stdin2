@@ -1,5 +1,7 @@
 # stdin2 [![Build status][npm-image]][npm-url] [![Build status][travis-image]][travis-url] [![Coverage Status][coverage-image]][coverage-url] [![js-standard-style][standard-image]][standard-url] [![Dependencies][david-image]][david-url] [![devDependencies][david-dev-image]][david-dev-url]
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/matjaz/stdin2.svg)](https://greenkeeper.io/)
+
 > Get [stdin](https://nodejs.org/api/process.html#process_process_stdin) as a string or buffer, using promise.  Supports timeout & tty.
 
 ## Install

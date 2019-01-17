@@ -11,7 +11,9 @@ test.serial('get stdin', (t) => {
   t.plan(1)
   setImmediate(() => {
     stdin.push('unicorns')
-    stdin.emit('end')
+    setImmediate(() => {
+      stdin.emit('end')
+    })
   })
   return getStdin().then((r) => t.is(r, 'unicorns'))
 })
@@ -23,7 +25,9 @@ test.serial('get stdin as a buffer', (t) => {
   })
   stdin.push('unicorns')
   stdin.push(Buffer.from('-foobar'))
-  stdin.emit('end')
+  setImmediate(() => {
+    stdin.emit('end')
+  })
   return promise
 })
 
@@ -40,7 +44,9 @@ test.serial('clear timeout on data', (t) => {
     t.is(r, 'unicorns')
   })
   stdin.push('unicorns')
-  stdin.emit('end')
+  setImmediate(() => {
+    stdin.emit('end')
+  })
   return promise
 })
 

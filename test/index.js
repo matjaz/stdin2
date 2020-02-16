@@ -1,5 +1,5 @@
-import test from 'ava'
-import getStdin from '../'
+const test = require('ava')
+const getStdin = require('../')
 
 const stdin = process.stdin
 
